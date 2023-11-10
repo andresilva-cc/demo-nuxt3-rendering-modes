@@ -1,23 +1,11 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Demo of Rendering Modes in Nuxt 3
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
 yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -25,51 +13,47 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
 yarn dev
-
-# bun
-bun run dev
 ```
+
+PS: To preview each rendering mode, use the production build as described below.
 
 ## Production
 
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
 yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
 yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Rendering Modes
+
+### CSR
+
+The page is rendered on the client-side.
+
+Use your browser devtools to simulate a slow 3G network to view the blank page while the JavaScript is downloaded.
+
+### SSR
+
+The page is rendered on the server-side. A new color is generated on every request.
+
+Use your browser devtools to simulate a slow 3G network to view that the page is already visible before the JavaScript is downloaded.
+
+### SSG
+
+The page is rendered on the server-side at build time. The color never changes, because the request executes only once at build time.
+
+Use your browser devtools to simulate a slow 3G network to view that the page is already visible before the JavaScript is downloaded.
+
+### ISR
+
+The page is rendered on the server-side and cached. It has a TTL of 10 seconds, and after that, it triggers a regeneration in the background, thus providing a new color when the regeneration is completed.
+
+Use your browser devtools to simulate a slow 3G network to view that the page is already visible before the JavaScript is downloaded.
