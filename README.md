@@ -44,16 +44,16 @@ Use your browser devtools to simulate a slow 3G network to view the blank page w
 
 The page is rendered on the server-side. A new color is generated on every request.
 
-Use your browser devtools to simulate a slow 3G network to view that the page is already visible before the JavaScript is downloaded.
+Use your browser devtools to simulate a slow 3G network to view that the page is already visible before the JavaScript is downloaded, but interactive only after the JavaScript is downloaded and executed.
 
 ### SSG
 
 The page is rendered on the server-side at build time. The color never changes, because the request executes only once at build time.
 
-Use your browser devtools to simulate a slow 3G network to view that the page is already visible before the JavaScript is downloaded.
+Use your browser devtools to simulate a slow 3G network to view that the page is already visible before the JavaScript is downloaded, but interactive only after the JavaScript is downloaded and executed.
 
 ### ISR
 
 The page is rendered on the server-side and cached. It has a TTL of 10 seconds, and after that, it triggers a regeneration in the background, thus providing a new color when the regeneration is completed.
 
-Use your browser devtools to simulate a slow 3G network to view that the page is already visible before the JavaScript is downloaded.
+Use your browser devtools to simulate a slow 3G network to view that the page is already visible before the JavaScript is downloaded, but interactive only after the JavaScript is downloaded and executed.
