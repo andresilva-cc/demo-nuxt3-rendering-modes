@@ -10,15 +10,15 @@ function handleClick() {
 </script>
 
 <template>
-  <div class="page">
-    <p class="page__name">Client-Side Rendering</p>
+  <main class="page">
+    <h1 class="page__name">Client-Side Rendering</h1>
     <p>{{ backgroundColor }}</p>
     <button class="page__button" @click="handleClick">Click Me</button>
-  </div>
+  </main>
 </template>
 
 <style scoped>
-p {
+h1, p {
   margin: 0;
   color: v-bind(backgroundColor);
   filter: invert(100%);
@@ -32,12 +32,10 @@ p {
   align-items: center;
   flex-direction: column;
   background-color: v-bind(backgroundColor);
-  text-transform: uppercase;
   font-weight: bold;
 }
 
 .page__name {
-  font-size: 24px;
   margin-bottom: 32px;
 }
 
