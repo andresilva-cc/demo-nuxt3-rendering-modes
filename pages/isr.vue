@@ -1,4 +1,8 @@
 <script setup>
+useHead({
+  title: 'ISR'
+})
+
 const backgroundColor = ref('#000')
 
 const { data } = await useFetch('https://random-flat-colors.vercel.app/api/random?count=2')

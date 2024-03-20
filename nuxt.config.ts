@@ -1,5 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      titleTemplate: '%s - Rendering Modes Demo'
+    }
+  },
+
   css: [
     '~/assets/css/app.css'
   ],
