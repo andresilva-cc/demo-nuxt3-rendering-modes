@@ -11,7 +11,7 @@ useHead({
     <NuxtLink to="/csr">Client-Side Rendering (CSR)</NuxtLink>
     <NuxtLink to="/ssr">Server-Side Rendering (SSR)</NuxtLink>
     <NuxtLink to="/ssg">Static Site Generation (SSG)</NuxtLink>
-    <NuxtLink to="/isr">Incremental Static Regeneration (ISG)</NuxtLink>
+    <NuxtLink to="/isr">Incremental Static Regeneration (ISR)</NuxtLink>
   </main>
 </template>
 
