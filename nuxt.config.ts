@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     '/csr': { ssr: false },
     '/ssr': { ssr: true },
     '/ssg': { prerender: true },
-    '/isr': { swr: 10 }
+    '/isr': { isr: 10, swr: 10 }
   },
 
   devtools: {
