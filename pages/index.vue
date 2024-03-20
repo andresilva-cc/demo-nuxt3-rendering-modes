@@ -1,3 +1,10 @@
+<script setup>
+useHead({
+  title: 'Rendering Modes Demo',
+  titleTemplate: ''
+})
+</script>
+
 <template>
   <main class="home">
     <h1>Rendering Modes Demo</h1>
